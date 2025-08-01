@@ -31,7 +31,7 @@ public class MapBuilder<TSource, TDestination>
         var destPropertyInfo = GetPropertyInfo(destinationMember);
         var sourcePropertyInfo = GetPropertyInfo(sourceMember);
 
-        mappedProperties.Add(typeof(TSource), (sourcePropertyInfo, destPropertyInfo));
+        mappedProperties.Add(typeof(TSourceType), (sourcePropertyInfo, destPropertyInfo));
 
         return this;
     }
